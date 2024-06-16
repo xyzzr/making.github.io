@@ -17,11 +17,15 @@
             align-items: center;
             height: 100vh;
         }
+        .wrapper {
+            display: flex;
+            gap: 20px; /* Space between containers */
+        }
         .container {
             background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 8px;
-            width: 600px;
+            width: 300px;
             max-width: 100%;
         }
         .title {
@@ -50,15 +54,24 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="title">
-            <p>xyzgames</p>
-            <img src="https://xyzzr.github.io/s/img/minecraft_photo.png" alt="Minecraft Photo" class="minecraft-photo">
-            <a href="https://xyzzr.github.io/s/games/mc">[GAME] Minecraft 1.8 (V1.1)</a>
+    <div class="wrapper">
+        <div class="container">
+            <div class="title">
+                <img src="https://xyzzr.github.io/s/img/minecraft_photo.png" alt="Minecraft Photo" class="minecraft-photo">
+                <a href="https://xyzzr.github.io/s/games/mc">[GAME] Minecraft 1.8 (V1.1)</a>
+            </div>
         </div>
-        <div class="meta">
-            <p>Credits to xyzzr!</p>
+        
+        <div class="container">
+            <div class="title">
+                <img src="https://xyzzr.github.io/s/img/minecraft_photo.png" alt="Minecraft Photo" class="minecraft-photo">
+                <a href="https://xyzzr.github.io/s/games/mc">a</a>
+            </div>
+            <div class="meta">
+                <p>Credits to xyzzr!</p>
+            </div>
         </div>
+        
     </div>
 </body>
 </html>
