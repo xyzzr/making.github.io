@@ -19,16 +19,15 @@
             height: 100vh;
         }
         .wrapper {
-            display: grid;
-            grid-template-columns: repeat(2, 300px);
+            display: flex;
             gap: 20px;
-            justify-content: center;
         }
         .container {
             background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 8px;
             width: 300px;
+            max-width: 100%;
             text-align: center;
         }
         .title {
@@ -51,11 +50,11 @@
             margin-bottom: 10px;
         }
         footer {
-            margin-top: 20px;
+            position: absolute;
+            bottom: 10px;
             font-size: 0.9em;
             color: #ccc;
             text-shadow: 1px 1px 2px #000;
-            text-align: center;
         }
     </style>
 </head>
@@ -65,24 +64,22 @@
             <div class="title">
                 <img src="https://xyzzr.github.io/s/img/minecraft_photo.png" alt="1.8" class="photo">
                 <a href="https://xyzzr.github.io/s/games/mc">Minecraft 1.8</a>
-                <p>(less tps than 1.5.2)</p>
+                </a>(less tps than 1.5.2)</a>
             </div>
         </div>
-        <div class="container">
-            <div class="title">
-                <img src="https://xyzzr.github.io/s/img/oldMc.png" alt="1.5.2" class="photo">
-                <a href="https://xyzzr.github.io/s/games/oldMc">Minecraft 1.5.2</a>
-            </div>
-        </div>
-        <div class="container">
-            <div class="title">
-                <img src="https://xyzzr.github.io/s/img/win11.png" alt="1.8" class="photo">
-                <a href="https://xyzzr.github.io/s/games/installingwin11">Fake win 11 install</a>
-            </div>
+javascript
+Copy code
+    <div class="container">
+        <div class="title">
+            <img src="https://xyzzr.github.io/s/img/oldMc.png" alt="1.5.2" class="photo">
+            <a href="https://xyzzr.github.io/s/games/oldMc">Minecraft 1.5.2</a>
         </div>
     </div>
-    <footer>
-        <p>Credits to xyzzr!</p>
-    </footer>
+
+    
+</div>
+<footer>
+    <p>Credits to xyzzr!</p>
+</footer>
 </body>
 </html>
